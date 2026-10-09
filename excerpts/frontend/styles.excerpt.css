@@ -1,0 +1,45 @@
+/* PRIVACY NOTICE: Partial code excerpt only. The full implementation is omitted for privacy. */
+/* Source: frontend/styles.css | Selected source lines: 82-121 */
+/* This incomplete excerpt is for portfolio review; it is not a runnable application. */
+
+.main {
+  flex: 999 1 560px; min-width: 0;
+  padding: 26px 36px 28px; display: flex; flex-direction: column; gap: 16px;
+}
+.page-head { display: flex; flex-direction: column; gap: 4px; }
+.page-head h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.page-head p { font-size: 14px; color: var(--text-muted); }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
+  background: var(--surface); color: var(--text-2); font-size: 13.5px; font-weight: 500; white-space: nowrap;
+}
+.btn:hover { background: #F6F7F9; }
+.btn strong { font-weight: 600; color: var(--text); }
+.btn-sm { height: 32px; font-size: 13px; }
+.btn-strong { font-weight: 600; color: var(--text); }
+.btn-soft { border-color: #E0E3E9; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { background: #3243C4; }
+.btn-icon { width: 30px; height: 30px; padding: 0; justify-content: center; }
+.btn:disabled { color: #A3A9B5; border-color: var(--border); cursor: default; background: var(--surface); }
+.btn-link { border: 0; background: none; color: var(--accent-ink); font-weight: 600; font-size: 13px; padding: 0 6px; height: 28px; display: inline-flex; align-items: center; gap: 5px; }
+.btn-link:hover { text-decoration: underline; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 12px;
+  border: 1px solid #E0E3E9; border-radius: 999px; background: var(--surface);
+  color: var(--text-2); font-size: 13px; font-weight: 500; white-space: nowrap;
+}
+.chip .icon { width: 14px; height: 14px; color: var(--text-faint); }
+.chip:hover { background: #F6F7F9; border-color: #C9CEDA; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- Status pills ---------- */
+.pill {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px;
+/* END OF EXCERPT. The remaining code is private. */

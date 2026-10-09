@@ -1,0 +1,45 @@
+<!-- PRIVACY NOTICE: Partial code excerpt only. The full implementation is omitted for privacy. -->
+<!-- Source: frontend/document.html | Selected source lines: 49-88 -->
+<!-- This incomplete excerpt is for portfolio review; it is not a runnable application. -->
+
+  <main class="main">
+    <div class="document-content">
+      <p><a href="ask.html">← Ask Documents</a> · <a href="index.html">Document Inbox</a></p>
+      <p id="loading" role="status">Loading document…</p>
+      <div id="content" hidden>
+        <header class="invoice-hero"><div><p class="document-eyebrow">INVOICE</p><h1 id="document-title"></h1><p id="document-subtitle"></p></div><div class="hero-amount"><span>Total amount</span><strong id="hero-total"></strong><span id="hero-payment"></span></div></header><p id="filename" class="document-file"></p>
+        <p class="document-origin" id="origin"></p>
+        <section class="card" aria-label="Invoice details">
+          <h2>Invoice details</h2>
+          <dl class="invoice-grid">
+            <div><dt>Supplier</dt><dd id="supplier"></dd></div>
+            <div><dt>Invoice number</dt><dd id="invoice-number"></dd></div>
+            <div><dt>Recipient</dt><dd id="recipient"></dd></div>
+            <div><dt>Payment terms</dt><dd id="terms"></dd></div>
+            <div><dt>Invoice date</dt><dd id="invoice-date"></dd></div>
+            <div><dt>Due date</dt><dd id="due-date"></dd></div>
+            <div><dt>Subtotal</dt><dd id="subtotal"></dd></div>
+            <div><dt>Tax</dt><dd id="tax"></dd></div>
+            <div><dt>Total</dt><dd id="total" class="invoice-total"></dd></div>
+            <div><dt>Payment details</dt><dd id="bank"></dd></div>
+          </dl>
+          <div class="review-panel" id="review-panel"><div class="review-panel-heading"><svg class="icon"><use href="#i-checklist"/></svg><h3>Document checks</h3><span id="status" class="pill"></span></div><p id="review"></p><p id="comparison"></p><div id="approval-panel"><span class="document-eyebrow">AMOUNT APPROVAL</span><p id="approval"></p></div></div>
+          <div id="document-actions" class="document-actions"></div>
+        </section>
+        <section class="card" aria-label="Payment history">
+          <h2>Payment history</h2>
+          <p><span id="payment-status"></span> · Recorded payments: <span id="paid"></span> · Outstanding: <span id="balance"></span></p>
+          <p id="ledger-note"></p>
+          <div class="ledger-wrap"><table><thead><tr><th>Date</th><th>Amount</th><th>Reference</th><th>Status</th></tr></thead><tbody id="ledger"></tbody></table></div>
+        </section>
+        <section class="card" aria-label="Original PDF">
+          <h2>Original PDF</h2>
+          <p><a id="pdf-link" target="_blank" rel="noopener">Open original PDF in a new tab</a></p>
+          <p>The preview shows the actual downloaded document. Demo values above may differ from the original.</p>
+          <iframe id="pdf-preview" title="Original invoice PDF preview"></iframe>
+        </section>
+        <details class="card"><summary>Extracted text and source evidence</summary><pre id="extracted-text"></pre></details>
+      </div>
+    </div>
+  </main>
+<!-- END OF EXCERPT. The remaining code is private. -->

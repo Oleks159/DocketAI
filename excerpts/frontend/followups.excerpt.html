@@ -1,0 +1,44 @@
+<!-- PRIVACY NOTICE: Partial code excerpt only. The full implementation is omitted for privacy. -->
+<!-- Source: frontend/followups.html | Selected source lines: 40-78 -->
+<!-- This incomplete excerpt is for portfolio review; it is not a runnable application. -->
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><svg class="icon"><use href="#i-inbox"/></svg>Document Inbox</a>
+      <a href="ask.html"><svg class="icon"><use href="#i-ask"/></svg>Ask Documents</a>
+      <a href="#"><svg class="icon"><use href="#i-settings"/></svg>Settings</a>
+      <a href="followups.html" aria-current="page">Follow-ups</a>
+      <a href="followups.html?view=deleted">Deleted tasks</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="followup-content">
+      <header class="page-head"><h1>Follow-ups</h1><p>Document issues and the actions needed to resolve them.</p></header>
+      <p id="origin"></p>
+      <div class="followup-controls" aria-label="Task views"><button id="view-active" class="btn" type="button">Tasks</button><button id="view-deleted" class="btn" type="button">Deleted tasks</button></div>
+      <div class="followup-counts">
+        <div class="card"><strong id="count-Open" class="stat-value">0</strong><p>Open</p></div>
+        <div class="card"><strong id="count-In-Progress" class="stat-value">0</strong><p>In Progress</p></div>
+        <div class="card"><strong id="count-Waiting" class="stat-value">0</strong><p>Waiting</p></div>
+        <div class="card"><strong id="count-Done" class="stat-value">0</strong><p>Done</p></div>
+      </div>
+      <section class="card">
+        <div class="followup-controls">
+          <input id="search" type="search" aria-label="Search follow-ups" placeholder="Search document, contact or action">
+          <select id="filter-status" aria-label="Filter status"><option value="">All statuses</option><option>Open</option><option>In Progress</option><option>Waiting</option><option>Done</option></select>
+          <button id="refresh" class="btn" type="button">Refresh</button>
+          <a id="export" class="btn" href="/api/followups/export">Export for Excel (.csv)</a>
+        </div>
+        <p>Add a row using <strong>Add follow-up</strong> on a document, or select one document in Ask Documents and ask: “Create a follow-up: contact supplier about the incorrect tax.”</p>
+        <p id="error" role="alert"></p><p id="result-count"></p>
+        <div class="followup-table-wrap"><table><thead><tr><th>Document</th><th>Issue</th><th>Who to contact</th><th>Next action</th><th>Assigned to</th><th>Due</th><th>Status</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+        <p id="empty">No follow-ups match. Add one from a document when you notice an issue.</p>
+      </section>
+    </div>
+  </main>
+</div>
+<script src="followup-ui.js?v=compactreview1" defer></script>
+<script src="followups.js?v=reviewflow1" defer></script>
+</body>
+</html>
+<!-- END OF EXCERPT. The remaining code is private. -->

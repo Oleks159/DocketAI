@@ -1,0 +1,21 @@
+# PRIVACY NOTICE: Partial code excerpt only. The full implementation is omitted for privacy.
+# Private application data must not be added to this excerpt project.
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+client_secret*.json
+token*.json
+data/
+logs/
+*.db
+*.db-*
+*.sqlite*
+*.log
+*.pdf
+*.zip
+.venv/
+venv/
+__pycache__/
+.pytest_cache/

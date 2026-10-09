@@ -1,0 +1,45 @@
+<!-- PRIVACY NOTICE: Partial code excerpt only. The full implementation is omitted for privacy. -->
+<!-- Source: frontend/ask-selected.html | Selected source lines: 45-84 -->
+<!-- This incomplete excerpt is for portfolio review; it is not a runnable application. -->
+
+  </aside>
+
+  <main class="main">
+    <div class="ask">
+
+      <header class="page-head">
+        <h1>Ask Documents</h1>
+        <p>Search, compare and analyze information across your processed documents.</p>
+      </header>
+
+      <section class="chip-row" aria-label="Suggested questions">
+        <button class="chip" type="button"><svg class="icon"><use href="#i-flag"/></svg>Review flagged documents</button>
+        <button class="chip" type="button"><svg class="icon"><use href="#i-chart"/></svg>Compare monthly spending</button>
+        <button class="chip" type="button"><svg class="icon"><use href="#i-copy"/></svg>Find duplicates</button>
+        <button class="chip" type="button"><svg class="icon"><use href="#i-arrow-up"/></svg>Show largest invoices</button>
+      </section>
+
+      <section class="conversation" aria-label="Conversation"></section>
+
+      <!-- Composer with 3 selected documents -->
+      <form class="composer" onsubmit="return false">
+        <div class="scope scope-nowrap" role="group" aria-label="Document scope"></div>
+        <label class="composer-box">
+          <button class="icon-btn" type="button" aria-label="Attach documents"><svg class="icon" style="width:17px;height:17px"><use href="#i-attach"/></svg></button>
+          <span class="visually-hidden">Ask a follow-up about the 3 selected documents</span>
+          <input type="text" placeholder="Ask a follow-up about these 3 documents…">
+          <button class="send-btn" type="submit" aria-label="Send"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+        </label>
+        <p class="composer-note">Answers cite supporting source filenames.</p>
+      </form>
+
+    </div>
+  </main>
+</div>
+<script src="review-ui.js?v=1" defer></script>
+<script src="followup-ui.js?v=compactreview1" defer></script>
+<script src="answer-ui.js?v=reviewlinks1" defer></script>
+<script src="app.js?v=richsample1" defer></script>
+</body>
+</html>
+<!-- END OF EXCERPT. The remaining code is private. -->
